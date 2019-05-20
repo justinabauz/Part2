@@ -14,7 +14,7 @@ namespace Lesson07_02.book
             public string author;
             public string subject;
             public int book_id;
-            public bool ar_isduota;
+            //public bool ar_isduota;
         };
 
         static void Main(string[] args)
@@ -28,11 +28,17 @@ namespace Lesson07_02.book
             knyga.subject = "Romanas";
             knyga.book_id = 1;
 
-           
+
             knyga2.title = "Karas ir taika 2 tomas";
             knyga2.author = "Tolstojus";
             knyga2.subject = "Romanas";
             knyga2.book_id = 2;
+
+            Console.WriteLine(knyga.title);
+            Console.WriteLine(knyga2.title);
+
+            Console.WriteLine(knyga.book_id);
+            Console.WriteLine(knyga2.book_id);
 
             Book[] knygos = new Book[2];
             knygos[0].title = "pavadinimas";
@@ -45,22 +51,34 @@ namespace Lesson07_02.book
             knygos[1].subject = "kazkoks2";
             knygos[1].book_id = 4;
 
-
-            for (int i = 0; i<knygos.Length; i++)
+            for (int i = 0; i < knygos.Length; i++)
             {
                 Console.WriteLine(knygos[i].title);
-            
-            
             }
 
 
-            Console.WriteLine(knyga.title);
-            Console.WriteLine(knyga2.title);
+            List<Book> knyguSarasas = new List<Book>();
 
-            Console.WriteLine(knyga.book_id);
-            Console.WriteLine(knyga2.book_id);
-            //Books knyga1; 
-            //Books knyga2;
+            Book knygaSarasui;
+            knygaSarasui.title = "Knyga Sarasui1";
+            knygaSarasui.author = "autorius1";
+            knygaSarasui.subject = "kazkas1";
+            knygaSarasui.book_id = 5;
+            //knygaSarasui.ar_isduota = false;
+
+            knyguSarasas.Add(knygaSarasui);
+            knyguSarasas.Add(knygaSarasui);
+            knyguSarasas.Add(knygaSarasui);
+            knyguSarasas.Add(knygaSarasui);
+            knyguSarasas.Add(knygaSarasui);
+
+
+            for (int i = 0; i < knyguSarasas.Count; i++)
+
+            {
+                Console.WriteLine(knyguSarasas[i].title);
+            }
         }
+  
     }
 }
