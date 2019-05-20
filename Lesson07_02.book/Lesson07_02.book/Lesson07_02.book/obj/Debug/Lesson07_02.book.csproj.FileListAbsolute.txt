@@ -1,0 +1,7 @@
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/bin/Debug/Lesson07_02.book.exe.config
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/bin/Debug/Lesson07_02.book.exe
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/bin/Debug/Lesson07_02.book.pdb
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/obj/Debug/Lesson07_02.book.csprojAssemblyReference.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/obj/Debug/Lesson07_02.book.csproj.CoreCompileInputs.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/obj/Debug/Lesson07_02.book.exe
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_02.book/Lesson07_02.book/Lesson07_02.book/obj/Debug/Lesson07_02.book.pdb

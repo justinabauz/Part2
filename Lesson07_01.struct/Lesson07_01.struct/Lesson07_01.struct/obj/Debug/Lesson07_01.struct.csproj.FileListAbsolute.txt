@@ -1,0 +1,7 @@
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/bin/Debug/Lesson07_01.@struct.exe.config
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/bin/Debug/Lesson07_01.@struct.exe
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/bin/Debug/Lesson07_01.@struct.pdb
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/obj/Debug/Lesson07_01.struct.csprojAssemblyReference.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/obj/Debug/Lesson07_01.struct.csproj.CoreCompileInputs.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/obj/Debug/Lesson07_01.@struct.exe
+/Users/justinazemaityte/Documents/GitHub/Part2/Lesson07_01.struct/Lesson07_01.struct/Lesson07_01.struct/obj/Debug/Lesson07_01.@struct.pdb
