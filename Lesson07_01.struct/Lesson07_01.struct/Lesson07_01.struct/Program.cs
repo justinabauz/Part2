@@ -8,29 +8,69 @@ namespace Lesson07_01.@struct
 {
     class Program
     {
-
-        private static int MetinisVidurkis(int trim1, int trim2, int trim3)
+        public struct Mokinys
         {
-            return (trim1+trim2+trim3)/3;
+            public int trim1;
+            public int trim2;
+            public int trim3;
+
+            public int MetinisVidurkis()
+            {
+                return (trim1 + trim2 + trim3) / 3;
+
+            }
+        
         }
         static void Main(string[] args)
         {
-            int trimestras1 = 8;
-            int trimestras2 = 10;
-            int trimestras3 = 9;
+            List<Mokinys> mokiniai = new List<Mokinys>();
+            SukurtiMokinius(mokiniai);
 
-            int trimestrasBosoVaiko1 = 6;
-            int trimestrasBosoVaiko2 = 7;
-            int trimestrasBosoVaiko3 = 9;
+            for (int i = 0; i< mokiniai.Count; i++)
+            {
+                Console.WriteLine("trimestras1: {0}, trimestras2: {1}, trimestras3: {2}",
+                    mokiniai[i].trim1, mokiniai[i].trim2, mokiniai[i].trim3);
+                int metVid = mokiniai[i].MetinisVidurkis();
+                Console.WriteLine(metVid);
+            }
 
-            int[] pirmoTrimestroPazymiai = { 10, 8, 9, 5 };
-            int[] antroTrimestroPazymiai = { 10, 8, 9, 5 };
-            int[] trecioTrimestroPazymiai = { 10, 8, 9, 5 };
+        }
+
+        private static void SukurtiMokinius(List<Mokinys> sarasas)
+        {
+            Mokinys mok = new Mokinys();
+            mok.trim1 = 10;
+            mok.trim2 = 9;
+            mok.trim3 = 7;
+
+            sarasas.Add(mok);
+
+            mok.trim1 = 6;
+            mok.trim2 = 8;
+            mok.trim3 = 9;
+
+            sarasas.Add(mok);
+
+            mok.trim1 = 5;
+            mok.trim2 = 10;
+            mok.trim3 = 9;
+
+            sarasas.Add(mok);
+
+            mok.trim1 = 7;
+            mok.trim2 = 6;
+            mok.trim3 = 9;
+
+            sarasas.Add(mok);
+
+            mok.trim1 = 9;
+            mok.trim2 = 10;
+            mok.trim3 = 9;
+
+            sarasas.Add(mok);
 
 
 
-            Console.WriteLine(MetinisVidurkis(trimestras1, trimestras2, trimestras3));
-            Console.ReadLine();
         }
     }
 }
