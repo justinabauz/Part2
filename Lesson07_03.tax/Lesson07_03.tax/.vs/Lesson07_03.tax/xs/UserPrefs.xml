@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{770B4BE8-9F04-4002-B39E-D0E31310321B}|Default">
+  <MonoDevelop.Ide.ItemProperties.test FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.test2 FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test2/Program.cs">
+    <Files>
+      <File FileName="Lesson07_03.tax/Program.cs" Line="19" Column="14" />
+      <File FileName="test/Task.Tests.cs" Line="31" Column="2" />
+      <File FileName="test2/Program.cs" Line="13" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lesson07_03.tax" expanded="True">
+            <Node name="Lesson07_03.tax" expanded="True" />
+            <Node name="test" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="test2" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Lesson07_03.tax" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Lesson07__03.tax PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

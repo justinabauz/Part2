@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skiepai", "Skiepai\Skiepai.csproj", "{3DDBA9B6-29D5-4A98-AC64-F45120F298C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skiepas", "Skiepas\Skiepas.csproj", "{E8414B2C-7CD0-4F59-8960-1F92630B96A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DDBA9B6-29D5-4A98-AC64-F45120F298C8}.Debug|x86.ActiveCfg = Debug|x86
+		{3DDBA9B6-29D5-4A98-AC64-F45120F298C8}.Debug|x86.Build.0 = Debug|x86
+		{3DDBA9B6-29D5-4A98-AC64-F45120F298C8}.Release|x86.ActiveCfg = Release|x86
+		{3DDBA9B6-29D5-4A98-AC64-F45120F298C8}.Release|x86.Build.0 = Release|x86
+		{E8414B2C-7CD0-4F59-8960-1F92630B96A6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E8414B2C-7CD0-4F59-8960-1F92630B96A6}.Debug|x86.Build.0 = Debug|Any CPU
+		{E8414B2C-7CD0-4F59-8960-1F92630B96A6}.Release|x86.ActiveCfg = Release|Any CPU
+		{E8414B2C-7CD0-4F59-8960-1F92630B96A6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -27,6 +27,9 @@ namespace Lesson07_03.tax
         }
         static void Main(string[] args)
         {
+            Console.WriteLine(Tax(1000000));
+            Console.WriteLine(Tax(10000));
+            Console.WriteLine(Tax(100));
         }
     }
 }
