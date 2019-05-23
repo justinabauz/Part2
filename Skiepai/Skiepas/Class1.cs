@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Skiepas
+namespace SkiepasStr
 {
-    public struct SkiepasStruct
+    public struct Skiepas
     {
-
-
+        public DateTime skiepoData;
+        public string skiepoPavadinimas;
     }
 }
