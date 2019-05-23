@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saskaita", "Saskaita\Saskaita.csproj", "{7A9925EE-86AD-41B9-8F25-C077CD386103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saskaita_Struct", "Saskaita_Struct\Saskaita_Struct.csproj", "{48FF6AAE-2CC6-40BD-9401-8F9C212B0ACF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A9925EE-86AD-41B9-8F25-C077CD386103}.Debug|x86.ActiveCfg = Debug|x86
+		{7A9925EE-86AD-41B9-8F25-C077CD386103}.Debug|x86.Build.0 = Debug|x86
+		{7A9925EE-86AD-41B9-8F25-C077CD386103}.Release|x86.ActiveCfg = Release|x86
+		{7A9925EE-86AD-41B9-8F25-C077CD386103}.Release|x86.Build.0 = Release|x86
+		{48FF6AAE-2CC6-40BD-9401-8F9C212B0ACF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{48FF6AAE-2CC6-40BD-9401-8F9C212B0ACF}.Debug|x86.Build.0 = Debug|Any CPU
+		{48FF6AAE-2CC6-40BD-9401-8F9C212B0ACF}.Release|x86.ActiveCfg = Release|Any CPU
+		{48FF6AAE-2CC6-40BD-9401-8F9C212B0ACF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
