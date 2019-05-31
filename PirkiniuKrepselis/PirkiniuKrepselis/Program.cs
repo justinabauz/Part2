@@ -76,11 +76,11 @@ namespace PirkiniuKrepselis
                                  prekiuSarasas[koreguotiPreke-1].KainaVieneto);
                     Console.WriteLine("Iveskite nauja kieki");
                     int naujasKiekis = Convert.ToInt32(Console.ReadLine());
-                    Pirkinys tarpinis = new Pirkinys();
-                    tarpinis.Kiekis = naujasKiekis;
-                    tarpinis.PrekesPavadinimas = prekiuSarasas[koreguotiPreke-1].PrekesPavadinimas;
-                    tarpinis.KainaVieneto = prekiuSarasas[koreguotiPreke-1].KainaVieneto;
-                    prekiuSarasas[koreguotiPreke-1] = tarpinis;
+                    Pirkinys naujas = new Pirkinys();
+                    naujas.Kiekis = naujasKiekis;
+                    naujas.PrekesPavadinimas = prekiuSarasas[koreguotiPreke-1].PrekesPavadinimas;
+                    naujas.KainaVieneto = prekiuSarasas[koreguotiPreke-1].KainaVieneto;
+                    prekiuSarasas[koreguotiPreke-1] = naujas;
 
                 }
                 Console.WriteLine("Iveskite, kokia operacija atliksite: [1] - testi darba, [2] - iseiti");
