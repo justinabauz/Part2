@@ -38,7 +38,7 @@ namespace CRM.BL
         public bool Validate()
         {
             var isValid = true;
-            if(string.IsNullOrWhiteSpace(LastName))
+            if (string.IsNullOrWhiteSpace(LastName))
             {
                 isValid = false;
             
@@ -51,6 +51,15 @@ namespace CRM.BL
 
             return isValid;
 
+        }
+
+        public Customer()
+        {
+
+        }
+        public Customer(int customerID)
+        {
+            CustomerID = customerID;
         }
 
     }

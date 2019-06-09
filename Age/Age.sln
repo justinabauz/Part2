@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Age", "Age\Age.csproj", "{F028E5EA-90FE-4082-9D7F-A52A70541291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeClass", "AgeClass\AgeClass.csproj", "{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F028E5EA-90FE-4082-9D7F-A52A70541291}.Debug|x86.ActiveCfg = Debug|x86
+		{F028E5EA-90FE-4082-9D7F-A52A70541291}.Debug|x86.Build.0 = Debug|x86
+		{F028E5EA-90FE-4082-9D7F-A52A70541291}.Release|x86.ActiveCfg = Release|x86
+		{F028E5EA-90FE-4082-9D7F-A52A70541291}.Release|x86.Build.0 = Release|x86
+		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
