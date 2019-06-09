@@ -9,7 +9,8 @@ namespace Age
         {
            DateTime date = new DateTime(2018, 2, 13);
            AgeClass Asmuo = new AgeClass("Juste", "Bauz", date);
-           Console.WriteLine("Vardas  - {0}, Pavarde - {1}, Gimimo Metai - {2}", Asmuo.Vardas, Asmuo.Pavarde, Asmuo.GimimoMetai);
+           Console.WriteLine("Vardas  - {0}, Pavarde - {1}, Gimimo Metai - {2}, Metai - {3}", Asmuo.Vardas, Asmuo.Pavarde, 
+               Asmuo.GimimoMetai, Asmuo.GetAge());
         }
     }
 }

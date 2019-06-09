@@ -19,5 +19,16 @@ namespace VardasPavarde
         public string Vardas { get; set; }
         public string Pavarde { get; set; }
         public DateTime GimimoMetai { get;  private set; }
+        public int GetAge()
+        { 
+            var today = DateTime.Today;
+            var age = today.Year - GimimoMetai.Year;
+            if (GimimoMetai.Date > today.AddYears(-age)) age--;
+
+            return age;
+
+
+        }
+
     }
 }

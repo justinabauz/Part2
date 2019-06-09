@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Age", "Age\Age.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeClass", "AgeClass\AgeClass.csproj", "{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAgeTests", "GetAgeTests\GetAgeTests.csproj", "{7C2EE692-6F17-4BC4-A6F3-ADBB714D0454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Debug|x86.Build.0 = Debug|Any CPU
 		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Release|x86.ActiveCfg = Release|Any CPU
 		{F8A145AF-0C4F-4667-99C2-FB51BD230DCA}.Release|x86.Build.0 = Release|Any CPU
+		{7C2EE692-6F17-4BC4-A6F3-ADBB714D0454}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C2EE692-6F17-4BC4-A6F3-ADBB714D0454}.Debug|x86.Build.0 = Debug|Any CPU
+		{7C2EE692-6F17-4BC4-A6F3-ADBB714D0454}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C2EE692-6F17-4BC4-A6F3-ADBB714D0454}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
