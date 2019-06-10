@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{A77E867E-F4A1-4E68-920B-511D13D7D9E6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary1/Repositories/AircraftRepository.cs">
+    <Files>
+      <File FileName="ClassLibrary1/Aircraft.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/AircraftModel.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/Company.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/Country.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/EmailSender.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/HTMLFormatter.cs" Line="36" Column="34" />
+      <File FileName="ClassLibrary1/ReportGenerator.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary1/ReportItem.cs" Line="5" Column="14" />
+      <File FileName="ClassLibrary1/Repositories/AircraftModelRepository.cs" Line="2" Column="1" />
+      <File FileName="ClassLibrary1/Repositories/CountryRepository.cs" Line="115" Column="1" />
+      <File FileName="AircraftMain/Program.cs" Line="28" Column="6" />
+      <File FileName="ClassLibrary1/Repositories/AircraftRepository.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lesson11_01.IAC" expanded="True">
+            <Node name="AircraftMain" expanded="True" />
+            <Node name="IAC.BL" expanded="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="AircraftRepository.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Lesson11_01.IAC.test" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AircraftMain PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

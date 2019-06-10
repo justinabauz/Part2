@@ -1,0 +1,9 @@
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/bin/Debug/netstandard2.0/IAC.BL.deps.json
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/bin/Debug/netstandard2.0/IAC.BL.dll
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/bin/Debug/netstandard2.0/IAC.BL.pdb
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.csprojAssemblyReference.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.csproj.CoreCompileInputs.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.AssemblyInfoInputs.cache
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.AssemblyInfo.cs
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.dll
+/Users/justinazemaityte/Documents/GitHub/Part2/Aircraft/Lesson11_01.IAC/ClassLibrary1/obj/Debug/netstandard2.0/IAC.BL.pdb
