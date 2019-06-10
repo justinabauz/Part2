@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knygugrazinimas", "Knygugrazinimas\Knygugrazinimas.csproj", "{81059D55-F300-4449-A85E-4A2DE9BFCDB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookBL", "BookBL\BookBL.csproj", "{7E12C504-D4B7-4FD0-AA8C-8538C75F19FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArVelavoTest", "ArVelavoTest\ArVelavoTest.csproj", "{46D61386-ABE1-496E-A760-5C53A2DB37F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81059D55-F300-4449-A85E-4A2DE9BFCDB8}.Debug|x86.ActiveCfg = Debug|x86
+		{81059D55-F300-4449-A85E-4A2DE9BFCDB8}.Debug|x86.Build.0 = Debug|x86
+		{81059D55-F300-4449-A85E-4A2DE9BFCDB8}.Release|x86.ActiveCfg = Release|x86
+		{81059D55-F300-4449-A85E-4A2DE9BFCDB8}.Release|x86.Build.0 = Release|x86
+		{7E12C504-D4B7-4FD0-AA8C-8538C75F19FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7E12C504-D4B7-4FD0-AA8C-8538C75F19FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{7E12C504-D4B7-4FD0-AA8C-8538C75F19FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{7E12C504-D4B7-4FD0-AA8C-8538C75F19FD}.Release|x86.Build.0 = Release|Any CPU
+		{46D61386-ABE1-496E-A760-5C53A2DB37F9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{46D61386-ABE1-496E-A760-5C53A2DB37F9}.Debug|x86.Build.0 = Debug|Any CPU
+		{46D61386-ABE1-496E-A760-5C53A2DB37F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{46D61386-ABE1-496E-A760-5C53A2DB37F9}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
