@@ -10,9 +10,8 @@ namespace Tests
         [Test]
         public void GetAgeTest()
         {
-            DateTime date = new DateTime(2018, 2, 13);
 
-            AgeClass Asmuo = new AgeClass("Juste", "Bauz", date);
+            AgeClass Asmuo = new AgeClass("Juste", "Bauz", new DateTime(2018, 2, 13));
 
             int expected = 1;
 

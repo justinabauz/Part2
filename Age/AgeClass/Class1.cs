@@ -23,7 +23,8 @@ namespace VardasPavarde
         { 
             var today = DateTime.Today;
             var age = today.Year - GimimoMetai.Year;
-            if (GimimoMetai.Date > today.AddYears(-age)) age--;
+            if (GimimoMetai.Date > today.AddYears(-age)) 
+            age--;
 
             return age;
 
