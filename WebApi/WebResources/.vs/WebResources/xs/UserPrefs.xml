@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{7C33BEB6-006A-4903-9FC5-DF3E34F0200C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebResources/App_Start/WebApiConfig.cs">
+    <Files>
+      <File FileName="WebResources/App_Start/WebApiConfig.cs" Line="16" Column="1" />
+      <File FileName="Source Not Available" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebResources" expanded="True">
+            <Node name="WebResources" expanded="True" selected="True">
+              <Node name="App_Start" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebResources PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

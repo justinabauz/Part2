@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Working_files", "Working_files\Working_files.csproj", "{E876713D-46D7-45E8-8B23-E32F7F19BA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFilesBL", "WorkingWithFilesBL\WorkingWithFilesBL.csproj", "{C00C3E83-BFD3-40D2-A50F-FCD3D9221B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E876713D-46D7-45E8-8B23-E32F7F19BA58}.Debug|x86.ActiveCfg = Debug|x86
+		{E876713D-46D7-45E8-8B23-E32F7F19BA58}.Debug|x86.Build.0 = Debug|x86
+		{E876713D-46D7-45E8-8B23-E32F7F19BA58}.Release|x86.ActiveCfg = Release|x86
+		{E876713D-46D7-45E8-8B23-E32F7F19BA58}.Release|x86.Build.0 = Release|x86
+		{C00C3E83-BFD3-40D2-A50F-FCD3D9221B2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C00C3E83-BFD3-40D2-A50F-FCD3D9221B2B}.Debug|x86.Build.0 = Debug|Any CPU
+		{C00C3E83-BFD3-40D2-A50F-FCD3D9221B2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C00C3E83-BFD3-40D2-A50F-FCD3D9221B2B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
