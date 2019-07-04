@@ -3,6 +3,6 @@ namespace DataBL
 {
     public enum OrderStatus
     {
-        Created, Aproved, Paid, Delivered
+        Created, Aproved, Paid, Delivered, Unpaid
     }
 }

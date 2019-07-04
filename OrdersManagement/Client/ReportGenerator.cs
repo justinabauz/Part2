@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace DataBL
 {
     public class ReportGenerator
     {
         AdressRepository adressRepository = new AdressRepository();
+        ClientRepository clientRepository = new ClientRepository();
         private ClientRepository _clientRepository;
         public ReportGenerator(ClientRepository clientRepository)
         {
@@ -29,21 +30,23 @@ namespace DataBL
             }
             return clientTemp;
         }
-        public string GenerateUnpaidOrders(List<Order> orders)
-        { 
-            foreach (var order in orders)
-            { 
-            
-            
+        public void GenerateOrdersReportByStatus(List<Order> ReportOrders, OrderStatus ReportingStatus)
+        {
+            string OrderTemp = "";
+            foreach (Order ReportOrder in ReportOrders)
+            {
+                if (ReportOrder.Status == ReportingStatus)
+                {
+
+                    var client = clientRepository.Retrieve(ReportOrder.ClientId);
+                    OrderTemp += "OrderId: " + ReportOrder.OrderId + " ClientId: " + ReportOrder.ClientId + " Client Name: " + client.Name
+                        + " Status: " + ReportOrder.Status
+                        + Environment.NewLine;
+                }
             }
-
-            return "";
+            Console.WriteLine(OrderTemp);
         }
-
 
     }
 }
 
-//Inventory inventory = inventoryRepository.Retrieve(item.ItemId);
-//Console.WriteLine("Index: {1}, Items Name: {0}", inventory.ItemName, itemsindex);
-//                            itemsindex = itemsindex + 1;

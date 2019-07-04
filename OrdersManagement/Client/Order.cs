@@ -13,13 +13,15 @@ namespace DataBL
         {
         }
 
-        public Order(int clientId, OrderStatus status, DateTime date)
+        public Order(int orderId, int clientId, OrderStatus status, DateTime date)
         {
+            OrderId = orderId;
             ClientId = clientId;
             Status = status;
             Date = date;
         }
 
+        public int OrderId { get; set; }
         public int ClientId { get; set; }
         public OrderStatus Status { get; set; }
         public DateTime Date { get; set; }
@@ -34,8 +36,6 @@ namespace DataBL
         {
             orderItems.RemoveAt(index);
         }
-
-
 
     }
 }

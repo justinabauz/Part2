@@ -24,5 +24,6 @@ namespace DataBL
         public string Surname { get; set; }
         public int HomeAdressId { get; set; }
         public int DeliveryAdressId { get; set; }
+
     }
 }

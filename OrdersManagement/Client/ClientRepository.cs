@@ -33,7 +33,7 @@ namespace DataBL
                 clients.Add(client);
             }
 
-            public void DeleteItem(int index)
+        public void DeleteItem(int index)
             {
                 clients.RemoveAt(index);
             }

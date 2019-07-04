@@ -1,6 +1,7 @@
 ﻿using System;
 using DataBL;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace OrdersManagement
 {
@@ -12,6 +13,8 @@ namespace OrdersManagement
             ClientRepository clientRepository = new ClientRepository();
             InventoryRepository inventoryRepository = new InventoryRepository();
             AdressRepository adressRepository = new AdressRepository();
+            List<Order> orders = new List<Order>();
+            ReportGenerator reportGenerator = new ReportGenerator(clientRepository);
            
             int MainAction = -1;
 
@@ -78,17 +81,54 @@ namespace OrdersManagement
 
                         }
 
+                        Console.WriteLine("How do you want to enter Delivery adress? [1] " +
+                            "- Select adress ID from the list below, [2] - Add new adress");
+                        foreach (var adress in adressRepository.Retrieve())
+                        {
+                            Console.WriteLine("Adress ID - {0}, City - {1}, Street - {2}", adress.AdressId, adress.City,
+                                adress.Street);
+                        }
 
-                        Console.WriteLine("Please enter delivery adress id");
-                        int deliveryAdressId = Convert.ToInt32(Console.ReadLine());
+                        int deliveryadressSelectionOption = Convert.ToInt32(Console.ReadLine());
+                        int deliveryAdressID = 0;
+                        if (deliveryadressSelectionOption == 1)
+                        {
+                            Console.WriteLine("Please enter delivery adress id from the list");
+                            deliveryAdressID = Convert.ToInt32(Console.ReadLine());
+                        }
 
+                        else if (deliveryadressSelectionOption == 2)
 
-                        clientRepository.AddNewItem(new Client(newClientsID, newClientsName, newClientsSurname, homeAdressID, deliveryAdressId));
+                        {
+                            Console.WriteLine("Please enter new adress Id");
+                            deliveryAdressID = Convert.ToInt32(Console.ReadLine());
 
+                            Console.WriteLine("Please enter new adress City");
+                            string newadressCity = Console.ReadLine();
+
+                            Console.WriteLine("Please enter new adress Street");
+                            string newadressStreet = Console.ReadLine();
+
+                            Console.WriteLine("Please enter new adress ZipCode");
+                            int newadressZipCode = Convert.ToInt32(Console.ReadLine());
+
+                            adressRepository.AddnewAdress(new ClientAdress(deliveryAdressID, newadressCity, newadressStreet,
+                                newadressZipCode));
+
+                            foreach (var adress in adressRepository.Retrieve())
+                            {
+                                Console.WriteLine("Adress ID - {0}, City - {1}, Street - {2}", adress.AdressId, adress.City,
+                                    adress.Street);
+                            }
+
+                        }
+
+                        clientRepository.AddNewItem(new Client(newClientsID, newClientsName, newClientsSurname, homeAdressID, deliveryAdressID));
 
                         foreach (var cl in clientRepository.Retrieve())
                         {
-                            Console.WriteLine("Client {0}", cl.ClientID);
+                            Console.WriteLine("Client {0}, Name {1}, Home Adress id {2}, Delivery Adress id {3}:", cl.ClientID, cl.Name,
+                                cl.HomeAdressId, cl.DeliveryAdressId);
                         }
 
                     }
@@ -110,7 +150,8 @@ namespace OrdersManagement
 
                         foreach (var cl in clientRepository.Retrieve())
                         {
-                            Console.WriteLine("Client {0}", cl.ClientID);
+                            Console.WriteLine("Client {0}, Name {1}, Home Adress id {2}, Delivery Adress id {3}:", cl.ClientID, cl.Name,
+                                cl.HomeAdressId, cl.DeliveryAdressId);
                         }
 
                     }
@@ -161,7 +202,7 @@ namespace OrdersManagement
                 }
                 else if (MainAction == 3)
                 {
-                    Console.WriteLine("Do you want to add a new order? [1] - Yes, [2] - Modify existing order, [3] - No");
+                    Console.WriteLine("Do you want to add a new order? [1] - Yes, [2] - Modify existing order stautus to unpaid, [3] - No");
 
                     int addNewOrder = Convert.ToInt32(Console.ReadLine());
 
@@ -171,6 +212,9 @@ namespace OrdersManagement
                         order.Status = OrderStatus.Created;
                         order.Date = DateTime.Now;
 
+                        Console.WriteLine("Please enter Order's ID");
+                        int ordersId = Convert.ToInt32(Console.ReadLine());
+
                         Console.WriteLine("Please enter Client's ID from the list below:");
                         foreach (var cl in clientRepository.Retrieve())
                         {
@@ -179,14 +223,13 @@ namespace OrdersManagement
                         int clientsId = Convert.ToInt32(Console.ReadLine());
 
                         //Patikrint ar toks ID egzistuoja!
-
+                        order.OrderId = ordersId;
                         order.ClientId = clientsId;
-
+                        orders.Add(order);
                         bool addInventory = true;
                         while (addInventory == true)
                         {
-                            Console.WriteLine("Do you want to add new item to order? [1] - Add new item, [2] - Delete item from" +
-                                "order, [3] - Finish order");
+                            Console.WriteLine("Do you want to add new item to order? [1] - Add new item, [2] - Finish order");
                             int addItemToOrder = Convert.ToInt32(Console.ReadLine());
                             if (addItemToOrder == 1)
                             {
@@ -213,11 +256,10 @@ namespace OrdersManagement
                                 order.AddnewItem(orderItem);
 
                             }
-                            else if (addItemToOrder == 2)
+                            else if (addItemToOrder == 3)
                             {
                                 int itemsindex = 0;
-                                //order.OrderItems;
-                                Console.WriteLine("Please neter index from the list of item you want to delete?:");
+                                Console.WriteLine("Please enter index from the list of item you want to delete?:");
                                 foreach (var item in order.OrderItems)
                                 {
                                     Inventory inventory = inventoryRepository.Retrieve(item.ItemId);
@@ -239,11 +281,25 @@ namespace OrdersManagement
                     else if (addNewOrder == 2)
                     {
                         Console.WriteLine("Please select Order ID from the list below:");
-                        foreach (var cl in clientRepository.Retrieve())
-                        {
-                            Console.WriteLine("Client {0}", cl.ClientID);
+
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Created);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Aproved);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Unpaid);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Paid);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Delivered);
+                        int orderIdTochangeStatus = Convert.ToInt32(Console.ReadLine());
+                        foreach (var orderItem in orders)
+                        { 
+                            if (orderItem.OrderId == orderIdTochangeStatus)
+                                {
+                                orderItem.Status = OrderStatus.Unpaid;
+                                }
                         }
-                        int clientsId = Convert.ToInt32(Console.ReadLine());
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Created);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Aproved);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Unpaid);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Paid);
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Delivered);
                     }
                 }
                 else if (MainAction == 4)
@@ -252,10 +308,19 @@ namespace OrdersManagement
 
                     int generateClientsReport = Convert.ToInt32(Console.ReadLine());
 
+                    if (generateClientsReport == 1)
+                    {
+                        Console.WriteLine(reportGenerator.GenerateClientsReport());
+                    }
 
                     Console.WriteLine("Do you want to generate unpaid orders report? [1] - Yes, [2] - No");
 
                     int unpaidOrdersReport = Convert.ToInt32(Console.ReadLine());
+
+                    if (unpaidOrdersReport == 1)
+                    {
+                        reportGenerator.GenerateOrdersReportByStatus(orders, OrderStatus.Unpaid);
+                    }
                 }
                 else if (MainAction == 0)
                 {
